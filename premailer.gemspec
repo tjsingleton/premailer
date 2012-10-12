@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
   s.author  = "Alex Dunae"
   s.files            = `git ls-files`.split("\n")
   s.test_files       = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables      = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
+  # failing to deploy on ey
+  # s.executables      = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.add_dependency('css_parser', '>= 1.1.9')
   s.add_dependency('htmlentities', '>= 4.0.0')
   s.add_development_dependency('hpricot', '>= 0.8.3')
